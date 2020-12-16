@@ -3,3 +3,37 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    width: 100vh;
+    background-color: cadetblue;
+}
+.container {
+  width: 250px;
+  height: 400px;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  line-height: 2.5rem;
+}
+#testo {
+   padding: 6px;
+   border-radius: 8px;
+} 
+#logo {
+    width: 180px;
+}
+#logo, img {
+    max-width: 100%;
+    text-align: center;
+}
+button {
+    padding: 6px;
+    border-radius: 8px;
+}
+ul {
+  list-style-type: none;
+}
+li {
+    background-color: lightgray;
+    max-width: 100%;
+}
