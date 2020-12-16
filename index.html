@@ -11,16 +11,17 @@
  <body>
      <div id="app">
          <div class="container">
-             <div  id= "logo"><img src="https://www.boolean.careers/images/misc/logo.png" alt=""></div>
-             <input id="testo" type="text">
-             <button>Add</button>
+             <div id= "logo"><img src="https://www.boolean.careers/images/misc/logo.png" alt=""></div>
+             <input type="text" id="testo" placeholder="Aggiungi qualcosa da fare" v-model="nuovaTask" @keyup.enter="aggiungiTask">
+             <button @click="aggiungiTask">Add</button>
              <h3>Todo List</h3>
              <ul>
-                 <li>Prima cosa da fare</li>
+                 <li v-for="(task, index) in tasksPresenti"> {{task}} <i class="fas fa-times-circle"></i> </li>
              </ul>
-         </div> 
+         </div>
      </div>
+    
      <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-     <script src="assets/js/main.js"></script>  
+     <script src="assets/js/main.js"></script>
  </body>
 </html>

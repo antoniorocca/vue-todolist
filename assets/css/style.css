@@ -1,40 +1,46 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 body {
-    height: 100vh;
-    background-color: cadetblue;
+  height: 100vh;
+  background-color: cadetblue;
 }
 .container {
   width: 250px;
   height: 400px;
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 40%;
   line-height: 2.5rem;
 }
 #testo {
-   padding: 8px;
-   border-radius: 8px;
+  padding: 8px;
+  border-radius: 8px;
 } 
 #logo {
-    width: 180px;
+  width: 180px;
 }
 #logo, img {
-    max-width: 100%;
-    text-align: center;
+  max-width: 100%;
+  text-align: center;
 }
 button {
-    padding: 8px;
-    border-radius: 8px;
+  padding: 8px;
+  border-radius: 8px;
 }
 ul {
   list-style-type: none;
 }
 li {
-    background-color: lightgray;
-    max-width: 100%;
-    border-radius: 8px;
+  background-color: lightgray;
+  max-width: 100%;
+  border-radius: 8px;
+  position: relative;
+}
+li i {
+  position: absolute;
+  right: 10px;
+  top: 12px; 
 }
