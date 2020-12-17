@@ -9,15 +9,21 @@ body {
 }
 .container {
   width: 250px;
-  height: 400px;
+  height: 100%;
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 40%;
   line-height: 2.5rem;
 }
 #testo {
   padding: 8px;
   border-radius: 8px;
+  border: 2px solid rgb(12, 217, 119);
+  color: rgb(0, 21, 51);
+}
+::placeholder {
+  color:rgb(0, 21, 51);
+  font-style: italic;
 } 
 #logo {
   width: 180px;
@@ -29,6 +35,16 @@ body {
 button {
   padding: 8px;
   border-radius: 8px;
+  color: rgb(12, 217, 119);
+  border: 2px solid rgb(12, 217, 119);
+  width: 50px;
+  background-color: white;
+  font-weight: bold;
+}
+h3 {
+  font-size: 25px;
+  font-style: italic;
+  color:rgb(0, 21, 51);
 }
 ul {
   list-style-type: none;
@@ -38,9 +54,17 @@ li {
   max-width: 100%;
   border-radius: 8px;
   position: relative;
+  border: 1px solid rgb(0, 21, 51);
+  color:rgb(0, 21, 51);
+  padding-left: 7px;
 }
 li i {
   position: absolute;
   right: 10px;
   top: 12px; 
+}
+#end {
+  font-size: 20px;
+  font-style: italic;
+  color: rgb(0, 21, 51);
 }

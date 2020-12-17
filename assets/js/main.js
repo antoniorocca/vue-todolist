@@ -12,20 +12,23 @@ let app = new Vue({
     data: {
         tasksPresenti: ['Do something', 'Do else', 'Do something else'],
         nuovaTask: '',
-        tasksDefault: 3
+        tasksDefault: 3,
+        zeroTasks: ''
     },
     methods: {
         aggiungiTask() {
             if(this.nuovaTask.length > 6) {
                 this.tasksPresenti.push(this.nuovaTask);
                 this.nuovaTask = '';
-                this.tasksDefault = 3;                
+                this.tasksDefault = 3;
+                this.zeroTasks = ''                
             }
         },
         rimuoviTask(index) {
             this.tasksPresenti.splice(index, 1);
-            if(this.tasksPresenti.length === 0){
+            if(this.tasksPresenti.length === 0) {
                 this.tasksDefault = 0;
+                this.zeroTasks = 'Nulla da fare'
             }
         }
     }
