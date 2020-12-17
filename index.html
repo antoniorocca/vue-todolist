@@ -16,7 +16,7 @@
              <button @click="aggiungiTask">Add</button>
              <h3>Todo List</h3>
              <ul>
-                 <li v-for="(task, index) in tasksPresenti"> {{task}} <i class="fas fa-times-circle"></i> </li>
+                 <li v-for="(task, index) in tasksPresenti"> {{task}} <i class="fas fa-times-circle" @click="rimuoviTask(index)"></i> </li>
              </ul>
          </div>
      </div>

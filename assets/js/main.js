@@ -22,5 +22,11 @@ let app = new Vue({
                 this.tasksDefault = 3;                
             }
         },
+        rimuoviTask(index) {
+            this.tasksPresenti.splice(index, 1);
+            if(this.tasksPresenti.length === 0){
+                this.tasksDefault = 0;
+            }
+        }
     }
 });
